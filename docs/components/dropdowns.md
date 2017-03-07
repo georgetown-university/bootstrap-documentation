@@ -15,7 +15,7 @@ Dropdowns are toggleable, contextual overlays for displaying lists of links and 
 
 Wrap the dropdown's trigger and the dropdown menu within `.dropdown`, or another element that declares `position: relative;`. Then, add the menu's HTML.
 
-{% example html %}
+{{ example html }}
 <div class="dropdown open">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Dropdown
@@ -26,13 +26,13 @@ Wrap the dropdown's trigger and the dropdown menu within `.dropdown`, or another
     <a class="dropdown-item" href="#">Something else here</a>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ### Button elements
 
 You can optionally use `<button>` elements in your dropdowns instead of `<a>`s.
 
-{% example html %}
+{{ example html }}
 <div class="dropdown open">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Dropdown
@@ -43,7 +43,7 @@ You can optionally use `<button>` elements in your dropdowns instead of `<a>`s.
     <button class="dropdown-item" type="button">Something else here</button>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 
 
@@ -51,9 +51,9 @@ You can optionally use `<button>` elements in your dropdowns instead of `<a>`s.
 
 By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add `.dropdown-menu-right` to a `.dropdown-menu` to right align the dropdown menu.
 
-{% callout info %}
+{{ callout info }}
 **Heads up!** Dropdowns are positioned only with CSS and may need some additional styles for exact alignment.
-{% endcallout %}
+{{ endcallout }}
 
 {% highlight html %}
 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
@@ -65,19 +65,19 @@ By default, a dropdown menu is automatically positioned 100% from the top and al
 
 Add a header to label sections of actions in any dropdown menu.
 
-{% example html %}
+{{ example html }}
 <div class="dropdown-menu">
   <h6 class="dropdown-header">Dropdown header</h6>
   <a class="dropdown-item" href="#">Action</a>
   <a class="dropdown-item" href="#">Another action</a>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Menu dividers
 
 Separate groups of related menu items with a divider.
 
-{% example html %}
+{{ example html }}
 <div class="dropdown-menu">
   <a class="dropdown-item" href="#">Action</a>
   <a class="dropdown-item" href="#">Another action</a>
@@ -85,19 +85,19 @@ Separate groups of related menu items with a divider.
   <div class="dropdown-divider"></div>
   <a class="dropdown-item" href="#">Separated link</a>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Disabled menu items
 
 Add `.disabled` to items in the dropdown to **style them as disabled**.
 
-{% example html %}
+{{ example html }}
 <div class="dropdown-menu">
   <a class="dropdown-item" href="#">Regular link</a>
   <a class="dropdown-item disabled" href="#">Disabled link</a>
   <a class="dropdown-item" href="#">Another link</a>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Usage
 
@@ -144,11 +144,11 @@ Call the dropdowns via JavaScript:
 $('.dropdown-toggle').dropdown()
 {% endhighlight %}
 
-{% callout info %}
+{{ callout info }}
 #### `data-toggle="dropdown"` still required
 
 Regardless of whether you call your dropdown via JavaScript or instead use the data-api, `data-toggle="dropdown"` is always required to be present on the dropdown's trigger element.
-{% endcallout %}
+{{ endcallout }}
 
 ### Options
 

@@ -13,48 +13,48 @@ Stylize [the HTML5 `<progress>` element](https://developer.mozilla.org/en-US/doc
 
 ### Example
 
-{% example html %}
+{{ example html }}
 <progress class="progress" value="0" max="100">0%</progress>
 <progress class="progress" value="25" max="100">25%</progress>
 <progress class="progress" value="50" max="100">50%</progress>
 <progress class="progress" value="75" max="100">75%</progress>
 <progress class="progress" value="100" max="100">100%</progress>
-{% endexample %}
+{{ endexample }}
 
 ### IE9 support
 
 Internet Explorer 9 doesn't support the HTML5 `<progress>` element, but we can work around that.
 
-{% example html %}
+{{ example html }}
 <progress class="progress" value="25" max="100">
   <div class="progress">
     <span class="progress-bar" style="width: 25%;">25%</span>
   </div>
 </progress>
-{% endexample %}
+{{ endexample }}
 
 ### Contextual alternatives
 
 Progress bars use some of the same button and alert classes for consistent styles.
 
-{% example html %}
+{{ example html }}
 <progress class="progress progress-success" value="25" max="100">25%</progress>
 <progress class="progress progress-info" value="50" max="100">50%</progress>
 <progress class="progress progress-warning" value="75" max="100">75%</progress>
 <progress class="progress progress-danger" value="100" max="100">100%</progress>
-{% endexample %}
+{{ endexample }}
 
 ### Striped
 
 Uses a gradient to create a striped effect.
 
-{% example html %}
+{{ example html }}
 <progress class="progress progress-striped" value="10" max="100">10%</progress>
 <progress class="progress progress-striped progress-success" value="25" max="100">25%</progress>
 <progress class="progress progress-striped progress-info" value="50" max="100">50%</progress>
 <progress class="progress progress-striped progress-warning" value="75" max="100">75%</progress>
 <progress class="progress progress-striped progress-danger" value="100" max="100">100%</progress>
-{% endexample %}
+{{ endexample }}
 
 ### Animated stripes
 

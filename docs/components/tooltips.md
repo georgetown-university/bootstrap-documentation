@@ -232,11 +232,11 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
   </table>
 </div>
 
-{% callout info %}
+{{ callout info }}
 #### Data attributes for individual tooltips
 
 Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.
-{% endcallout %}
+{{ endcallout }}
 
 ### Methods
 

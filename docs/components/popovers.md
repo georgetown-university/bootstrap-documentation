@@ -92,9 +92,9 @@ Four options are available: top, right, bottom, and left aligned.
 
 ## Live demo
 
-{% example html %}
+{{ example html }}
 <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
-{% endexample %}
+{{ endexample }}
 
 ### Four directions
 
@@ -138,15 +138,15 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 
 Use the `focus` trigger to dismiss popovers on the next click that the user makes.
 
-{% callout danger %}
+{{ callout danger }}
 #### Specific markup required for dismiss-on-next-click
 
 For proper cross-browser and cross-platform behavior, you must use the `<a>` tag, _not_ the `<button>` tag, and you also must include a [`tabindex`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#tabindex) attribute.
-{% endcallout %}
+{{ endcallout }}
 
-{% example html %}
+{{ example html }}
 <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
-{% endexample %}
+{{ endexample }}
 
 {% highlight js %}
 $('.popover-dismiss').popover({
@@ -274,11 +274,11 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
   </table>
 </div>
 
-{% callout info %}
+{{ callout info }}
 #### Data attributes for individual popovers
 
 Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.
-{% endcallout %}
+{{ endcallout }}
 
 ### Methods
 

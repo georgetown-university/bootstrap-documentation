@@ -15,7 +15,7 @@ Provide contextual feedback messages for typical user actions with the handful o
 
 Alerts are available for any length of text, as well as an optional dismiss button. For proper styling, use one of the four **required** contextual classes (e.g., `.alert-success`). For inline dismissal, use the [alerts jQuery plugin](#dismissing).
 
-{% example html %}
+{{ example html }}
 <div class="alert alert-success" role="alert">
   <strong>Well done!</strong> You successfully read this important alert message.
 </div>
@@ -28,13 +28,13 @@ Alerts are available for any length of text, as well as an optional dismiss butt
 <div class="alert alert-danger" role="alert">
   <strong>Oh snap!</strong> Change a few things up and try submitting again.
 </div>
-{% endexample %}
+{{ endexample }}
 
 ### Link color
 
 Use the `.alert-link` utility class to quickly provide matching colored links within any alert.
 
-{% example html %}
+{{ example html }}
 <div class="alert alert-success" role="alert">
   <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
 </div>
@@ -47,7 +47,7 @@ Use the `.alert-link` utility class to quickly provide matching colored links wi
 <div class="alert alert-danger" role="alert">
   <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
 </div>
-{% endexample %}
+{{ endexample }}
 
 ### Dismissing
 
@@ -60,14 +60,14 @@ Using the alert JavaScript plugin, it's possible to dismiss any alert inline. He
 
 You can see this in action with a live demo:
 
-{% example html %}
+{{ example html }}
 <div class="alert alert-warning alert-dismissible fade in" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
   <strong>Holy guacamole!</strong> You should check in on some of those fields below.
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## JavaScript behavior
 

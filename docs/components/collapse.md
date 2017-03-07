@@ -21,7 +21,7 @@ Click the buttons below to show and hide another element via class changes:
 
 You can use a link with the `href` attribute, or a button with the `data-target` attribute. In both cases, the `data-toggle="collapse"` is required.
 
-{% example html %}
+{{ example html }}
 <p>
   <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
     Link with href
@@ -35,13 +35,13 @@ You can use a link with the `href` attribute, or a button with the `data-target`
     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Accordion example
 
 Extend the default collapse behavior to create an accordion.
 
-{% example html %}
+{{ example html }}
 <div id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">
@@ -80,7 +80,7 @@ Extend the default collapse behavior to create an accordion.
     </div>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Accessibility
 

@@ -8,7 +8,7 @@ group: getting-started
 
 <div class="row m-t-2">
   <div class="col-sm-6">
-{% markdown %}
+{{ markdown }}
 ### Compiled
 Download just the compiled and minified CSS and JavaScript. Doesn't include any documentation or original source files.
 
@@ -16,15 +16,15 @@ Download just the compiled and minified CSS and JavaScript. Doesn't include any 
 <a href="{{ site.download.dist }}" class="btn btn-bs btn-outline" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download compiled');">Download Bootstrap</a>
 {% endcomment %}
 <span class="text-muted">Coming soon!</span>
-{% endmarkdown %}
+{{ endmarkdown }}
   </div>
   <div class="col-sm-6">
-{% markdown %}
+{{ markdown }}
 ### Source files
 Download everything: source Sass, JavaScript, and documentation files. **Requires a Sass compiler, [Autoprefixer](https://github.com/postcss/autoprefixer), and [some setup]({{ site.baseurl }}/getting-started/build-tools/#tooling-setup).**
 
 <a href="{{ site.download.source }}" class="btn btn-bs btn-outline" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download source');">Download source</a>
-{% endmarkdown %}
+{{ endmarkdown }}
   </div>
 </div>
 
@@ -32,9 +32,9 @@ Download everything: source Sass, JavaScript, and documentation files. **Require
 
 Pull in Bootstrap's **source files** into nearly any project with some of the most popular package managers. No matter the package manager, Bootstrap will **require a Sass compiler and [Autoprefixer](https://github.com/postcss/autoprefixer)** for a setup that matches our official compiled versions.
 
-{% callout warning %}
+{{ callout warning }}
 **Heads up!** Not all package managers have the v4 alpha published yet, but we should have them up shortly!
-{% endcallout %}
+{{ endcallout }}
 
 ### Bower
 
@@ -101,4 +101,3 @@ Need only a part of Bootstrap's CSS or JS? Use one of the custom builds to snag 
     <a class="btn btn-bs btn-outline" href="#">Download</a>
   </div>
 </div>
-

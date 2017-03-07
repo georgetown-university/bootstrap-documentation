@@ -15,19 +15,19 @@ Group a series of buttons together on a single line with the button group. Add o
 
 Wrap a series of buttons with `.btn` in `.btn-group`.
 
-{% example html %}
+{{ example html }}
 <div class="btn-group" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-secondary">Left</button>
   <button type="button" class="btn btn-secondary">Middle</button>
   <button type="button" class="btn btn-secondary">Right</button>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Button toolbar
 
 Combine sets of button groups into button toolbars for more complex components.
 
-{% example html %}
+{{ example html }}
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group" role="group" aria-label="First group">
     <button type="button" class="btn btn-secondary">1</button>
@@ -44,7 +44,7 @@ Combine sets of button groups into button toolbars for more complex components.
     <button type="button" class="btn btn-secondary">8</button>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Sizing
 
@@ -80,7 +80,7 @@ Instead of applying button sizing classes to every button in a group, just add `
 
 Place a `.btn-group` within another `.btn-group` when you want dropdown menus mixed with a series of buttons.
 
-{% example html %}
+{{ example html }}
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
   <button type="button" class="btn btn-secondary">1</button>
   <button type="button" class="btn btn-secondary">2</button>
@@ -95,7 +95,7 @@ Place a `.btn-group` within another `.btn-group` when you want dropdown menus mi
     </div>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Vertical variation
 

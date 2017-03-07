@@ -30,7 +30,7 @@ Navbars come with built-in support for a handful of sub-components. Mix and matc
 
 Here's an example of all the sub-components included in a default, light navbar:
 
-{% example html %}
+{{ example html }}
 <nav class="navbar navbar-light bg-faded">
   <a class="navbar-brand" href="#">Navbar</a>
   <ul class="nav navbar-nav">
@@ -52,13 +52,13 @@ Here's an example of all the sub-components included in a default, light navbar:
     <button class="btn btn-success-outline" type="submit">Search</button>
   </form>
 </nav>
-{% endexample %}
+{{ endexample }}
 
 ### Brand
 
 The `.navbar-brand` can be applied to most elements, but an anchor works best.
 
-{% example html %}
+{{ example html }}
 <nav class="navbar navbar-light bg-faded">
   <a class="navbar-brand" href="#">Navbar</a>
 </nav>
@@ -67,13 +67,13 @@ The `.navbar-brand` can be applied to most elements, but an anchor works best.
   <h1 class="navbar-brand">Navbar</h1>
 </nav>
 
-{% endexample %}
+{{ endexample }}
 
 ### Nav
 
 Navbar navigation is similar to our regular nav options—use the `.nav` base class with a modifier to achieve a particular look. In this case you'll want `.nav.navbar-nav`.
 
-{% example html %}
+{{ example html }}
 <nav class="navbar navbar-light bg-faded">
   <ul class="nav navbar-nav">
     <li class="nav-item active">
@@ -90,11 +90,11 @@ Navbar navigation is similar to our regular nav options—use the `.nav` base cl
     </li>
   </ul>
 </nav>
-{% endexample %}
+{{ endexample }}
 
 And because we use classes for our navs, you can avoid the list-based approach entirely if you like.
 
-{% example html %}
+{{ example html }}
 <nav class="navbar navbar-light bg-faded">
   <div class="nav navbar-nav">
     <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
@@ -103,7 +103,7 @@ And because we use classes for our navs, you can avoid the list-based approach e
     <a class="nav-item nav-link" href="#">About</a>
   </div>
 </nav>
-{% endexample %}
+{{ endexample }}
 
 
 ## Color schemes
@@ -196,50 +196,50 @@ Here are some examples to show what we mean.
 
 Although it's not required, you can wrap a navbar in a `.container` to center it on a page or add one within to only center the contents of a [fixed or static top navbar](#placement).
 
-{% example html %}
+{{ example html }}
 <div class="container">
   <nav class="navbar navbar-light bg-faded">
     <a class="navbar-brand" href="#">Navbar</a>
   </nav>
 </div>
-{% endexample %}
+{{ endexample }}
 
-{% example html %}
+{{ example html }}
 <nav class="navbar navbar-light bg-faded">
   <div class="container">
     <a class="navbar-brand" href="#">Navbar</a>
   </div>
 </nav>
-{% endexample %}
+{{ endexample }}
 
 ## Placement
 
 Navbars can be statically placed (their default behavior), static without rounded corners, or fixed to the top or bottom of the viewport.
 
-{% example html %}
+{{ example html }}
 <nav class="navbar navbar-full navbar-light bg-faded">
   <a class="navbar-brand" href="#">Full width</a>
 </nav>
-{% endexample %}
+{{ endexample }}
 
-{% example html %}
+{{ example html }}
 <nav class="navbar navbar-fixed-top navbar-light bg-faded">
   <a class="navbar-brand" href="#">Fixed top</a>
 </nav>
-{% endexample %}
+{{ endexample }}
 
-{% example html %}
+{{ example html }}
 <nav class="navbar navbar-fixed-bottom navbar-light bg-faded">
   <a class="navbar-brand" href="#">Fixed bottom</a>
 </nav>
-{% endexample %}
+{{ endexample }}
 
 
 ## Collapsible content
 
 Our collapse plugin allows you to use a `<button>` or `<a>` to toggle hidden content.
 
-{% example html %}
+{{ example html }}
 <div class="collapse" id="exCollapsingNavbar">
   <div class="bg-inverse p-a-1">
     <h4>Collapsed content</h4>
@@ -251,11 +251,11 @@ Our collapse plugin allows you to use a `<button>` or `<a>` to toggle hidden con
     &#9776;
   </button>
 </nav>
-{% endexample %}
+{{ endexample }}
 
 For more complex navbar patterns, like those used in Bootstrap v3, use the `.navbar-toggleable-*` classes in conjunction with the `.navbar-toggler`. These classes override our responsive utilities to show navigation only when content is meant to be shown.
 
-{% example html %}
+{{ example html }}
 <nav class="navbar navbar-light bg-faded">
   <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
     &#9776;
@@ -278,4 +278,4 @@ For more complex navbar patterns, like those used in Bootstrap v3, use the `.nav
     </ul>
   </div>
 </nav>
-{% endexample %}
+{{ endexample }}

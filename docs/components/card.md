@@ -17,7 +17,7 @@ If you're familiar with Bootstrap 3, cards replace our old panels, wells, and th
 
 Cards require a small amount of markup and classes to provide you with as much control as possible. These classes and markup are flexible though and can typically be remixed and extended with ease. For example, if your card has no flush content like images, feel free to put the `.card-block` class on the `.card` element to consolidate your markup.
 
-{% example html %}
+{{ example html }}
 <div class="card">
   <img class="card-img-top" data-src="holder.js/100px180/" alt="Card image cap">
   <div class="card-block">
@@ -26,13 +26,13 @@ Cards require a small amount of markup and classes to provide you with as much c
     <a href="#" class="btn btn-primary">Button</a>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Content types
 
 Cards support a wide variety of content, including images, text, list groups, links, and more. Mix and match multiple content types to create the card you need.
 
-{% example html %}
+{{ example html }}
 <div class="card">
   <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Card image cap">
   <div class="card-block">
@@ -49,9 +49,9 @@ Cards support a wide variety of content, including images, text, list groups, li
     <a href="#" class="card-link">Another link</a>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
-{% example html %}
+{{ example html }}
 <div class="card">
   <ul class="list-group list-group-flush">
     <li class="list-group-item">Cras justo odio</li>
@@ -59,27 +59,27 @@ Cards support a wide variety of content, including images, text, list groups, li
     <li class="list-group-item">Vestibulum at eros</li>
   </ul>
 </div>
-{% endexample %}
+{{ endexample }}
 
-{% example html %}
+{{ example html }}
 <div class="card">
   <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Card image cap">
   <div class="card-block">
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
-{% example html %}
+{{ example html }}
 <div class="card card-block">
   <h4 class="card-title">Card title</h4>
   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   <a href="#" class="card-link">Card link</a>
   <a href="#" class="card-link">Another link</a>
 </div>
-{% endexample %}
+{{ endexample }}
 
-{% example html %}
+{{ example html }}
 <div class="card">
   <div class="card-block">
     <h4 class="card-title">Card title</h4>
@@ -92,7 +92,7 @@ Cards support a wide variety of content, including images, text, list groups, li
     <a href="#" class="card-link">Another link</a>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Sizing
 
@@ -100,7 +100,7 @@ Constrain the width of cards via custom CSS, our predefined grid classes, or wit
 
 Using the grid:
 
-{% example html %}
+{{ example html }}
 <div class="row">
   <div class="col-sm-6">
     <div class="card card-block">
@@ -117,23 +117,23 @@ Using the grid:
     </div>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 Using custom widths:
 
-{% example html %}
+{{ example html }}
 <div class="card card-block" style="width: 18rem;">
   <h3 class="card-title">Special title treatment</h3>
   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
   <a href="#" class="btn btn-primary">Go somewhere</a>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Text alignment
 
 You can quickly change the text alignment of any card—in its entirety or specific parts—with our [text align classes]({{ site.baseurl }}/components/utilities/#text-alignment).
 
-{% example html %}
+{{ example html }}
 <div class="card card-block">
   <h4 class="card-title">Special title treatment</h4>
   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -151,13 +151,13 @@ You can quickly change the text alignment of any card—in its entirety or speci
   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
   <a href="#" class="btn btn-primary">Go somewhere</a>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Header and footer
 
 Add an optional header and/or footer within a card.
 
-{% example html %}
+{{ example html }}
 <div class="card">
   <div class="card-header">
     Featured
@@ -168,9 +168,9 @@ Add an optional header and/or footer within a card.
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
-{% example html %}
+{{ example html }}
 <div class="card">
   <h3 class="card-header">Featured</h3>
   <div class="card-block">
@@ -179,9 +179,9 @@ Add an optional header and/or footer within a card.
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
-{% example html %}
+{{ example html }}
 <div class="card">
   <div class="card-header">
     Quote
@@ -193,9 +193,9 @@ Add an optional header and/or footer within a card.
     </blockquote>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
-{% example html %}
+{{ example html }}
 <div class="card text-xs-center">
   <div class="card-header">
     Featured
@@ -209,13 +209,13 @@ Add an optional header and/or footer within a card.
     2 days ago
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Image caps
 
 Similar to headers and footers, cards include top and bottom image caps.
 
-{% example html %}
+{{ example html }}
 <div class="card">
   <img class="card-img-top" data-src="holder.js/100px180/" alt="Card image cap">
   <div class="card-block">
@@ -232,13 +232,13 @@ Similar to headers and footers, cards include top and bottom image caps.
   </div>
   <img class="card-img-bottom" data-src="holder.js/100px180/" alt="Card image cap">
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Image overlays
 
 Turn an image into a card background and overlay your card's text. Depending on the image, you may or may not need `.card-inverse` (see below).
 
-{% example html %}
+{{ example html }}
 <div class="card card-inverse">
   <img class="card-img" data-src="holder.js/100px270/#55595c:#373a3c/text:Card image" alt="Card image">
   <div class="card-img-overlay">
@@ -247,7 +247,7 @@ Turn an image into a card background and overlay your card's text. Depending on 
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Inverted text
 
@@ -255,7 +255,7 @@ Cards include a class for quickly toggling **the text color**. By default, cards
 
 You can also use `.card-inverse` with the [contextual backgrounds variants](#background-variants).
 
-{% example html %}
+{{ example html }}
 <div class="card card-inverse" style="background-color: #333; border-color: #333;">
   <div class="card-block">
     <h3 class="card-title">Special title treatment</h3>
@@ -263,13 +263,13 @@ You can also use `.card-inverse` with the [contextual backgrounds variants](#bac
     <a href="#" class="btn btn-primary">Button</a>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Background variants
 
 Cards include their own variant classes for quickly changing the `background-color` and `border-color` of a card. **Darker colors require the use of `.card-inverse`.**
 
-{% example html %}
+{{ example html }}
 <div class="card card-inverse card-primary text-xs-center">
   <div class="card-block">
     <blockquote class="card-blockquote">
@@ -310,7 +310,7 @@ Cards include their own variant classes for quickly changing the `background-col
     </blockquote>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Groups
 
@@ -318,7 +318,7 @@ Use card groups to render cards as a single, attached element with equal width a
 
 Only applies to small devices and above.
 
-{% example html %}
+{{ example html }}
 <div class="card-group">
   <div class="card">
     <img class="card-img-top" data-src="holder.js/100px180/" alt="Card image cap">
@@ -345,7 +345,7 @@ Only applies to small devices and above.
     </div>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Decks
 
@@ -355,7 +355,7 @@ Only applies to small devices and above.
 
 **ProTip!** If you enable [flexbox mode]({{ site.baseurl }}/getting-started/flexbox/), you can remove the `.card-deck-wrapper`.
 
-{% example html %}
+{{ example html }}
 <div class="card-deck-wrapper">
   <div class="card-deck">
     <div class="card">
@@ -384,7 +384,7 @@ Only applies to small devices and above.
     </div>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Columns
 
@@ -392,7 +392,7 @@ Cards can be organized into [Masonry](http://masonry.desandro.com)-like columns 
 
 **Heads up!** This is **not available in IE9 and below** as they have no support for the [`column-*` CSS properties](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_multi-column_layouts).
 
-{% example html %}
+{{ example html }}
 <div class="card-columns">
   <div class="card">
     <img class="card-img-top" data-src="holder.js/100px160/" alt="Card image cap">
@@ -453,4 +453,4 @@ Cards can be organized into [Masonry](http://masonry.desandro.com)-like columns 
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}

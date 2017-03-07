@@ -13,7 +13,7 @@ Due to the widespread use of tables across third-party widgets like calendars an
 
 ## Basic example
 
-{% example html %}
+{{ example html }}
 <table class="table">
   <thead>
     <tr>
@@ -44,11 +44,11 @@ Due to the widespread use of tables across third-party widgets like calendars an
     </tr>
   </tbody>
 </table>
-{% endexample %}
+{{ endexample }}
 
 ## Inverse table
 
-{% example html %}
+{{ example html }}
 <table class="table table-inverse">
   <thead>
     <tr>
@@ -79,13 +79,13 @@ Due to the widespread use of tables across third-party widgets like calendars an
     </tr>
   </tbody>
 </table>
-{% endexample %}
+{{ endexample }}
 
 ## Table head options
 
 Use one of two modifier classes to make `<thead>`s appear light or dark gray.
 
-{% example html %}
+{{ example html }}
 <table class="table">
   <thead class="thead-inverse">
     <tr>
@@ -147,13 +147,13 @@ Use one of two modifier classes to make `<thead>`s appear light or dark gray.
     </tr>
   </tbody>
 </table>
-{% endexample %}
+{{ endexample }}
 
 ## Striped rows
 
 Use `.table-striped` to add zebra-striping to any table row within the `<tbody>`.
 
-{% example html %}
+{{ example html }}
 <table class="table table-striped">
   <thead>
     <tr>
@@ -184,13 +184,13 @@ Use `.table-striped` to add zebra-striping to any table row within the `<tbody>`
     </tr>
   </tbody>
 </table>
-{% endexample %}
+{{ endexample }}
 
 ## Bordered table
 
 Add `.table-bordered` for borders on all sides of the table and cells.
 
-{% example html %}
+{{ example html }}
 <table class="table table-bordered">
   <thead>
     <tr>
@@ -226,13 +226,13 @@ Add `.table-bordered` for borders on all sides of the table and cells.
     </tr>
   </tbody>
 </table>
-{% endexample %}
+{{ endexample }}
 
 ## Hoverable rows
 
 Add `.table-hover` to enable a hover state on table rows within a `<tbody>`.
 
-{% example html %}
+{{ example html }}
 <table class="table table-hover">
   <thead>
     <tr>
@@ -262,13 +262,13 @@ Add `.table-hover` to enable a hover state on table rows within a `<tbody>`.
     </tr>
   </tbody>
 </table>
-{% endexample %}
+{{ endexample }}
 
 ## Small table
 
 Add `.table-sm` to make tables more compact by cutting cell padding in half.
 
-{% example html %}
+{{ example html }}
 <table class="table table-sm">
   <thead>
     <tr>
@@ -298,7 +298,7 @@ Add `.table-sm` to make tables more compact by cutting cell padding in half.
     </tr>
   </tbody>
 </table>
-{% endexample %}
+{{ endexample }}
 
 ## Contextual classes
 
@@ -442,13 +442,13 @@ Use contextual classes to color table rows or individual cells.
 
 Create responsive tables by wrapping any `.table` in `.table-responsive` to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.
 
-{% callout warning %}
+{{ callout warning }}
 #### Vertical clipping/truncation
 
 Responsive tables make use of `overflow-y: hidden`, which clips off any content that goes beyond the bottom or top edges of the table. In particular, this can clip off dropdown menus and other third-party widgets.
-{% endcallout %}
+{{ endcallout }}
 
-{% callout warning %}
+{{ callout warning }}
 #### Firefox and fieldsets
 
 Firefox has some awkward fieldset styling involving `width` that interferes with the responsive table. This cannot be overridden without a Firefox-specific hack that we **don't** provide in Bootstrap:
@@ -460,7 +460,7 @@ Firefox has some awkward fieldset styling involving `width` that interferes with
 {% endhighlight %}
 
 For more information, read [this Stack Overflow answer](https://stackoverflow.com/questions/17408815/fieldset-resizes-wrong-appears-to-have-unremovable-min-width-min-content/17863685#17863685).
-{% endcallout %}
+{{ endcallout }}
 
 <div class="bd-example">
   <div class="table-responsive">
@@ -565,7 +565,7 @@ For more information, read [this Stack Overflow answer](https://stackoverflow.co
 
 ### Reflow
 
-{% example html %}
+{{ example html }}
 <table class="table table-reflow">
   <thead>
     <tr>
@@ -608,4 +608,4 @@ For more information, read [this Stack Overflow answer](https://stackoverflow.co
     </tr>
   </tbody>
 </table>
-{% endexample %}
+{{ endexample }}

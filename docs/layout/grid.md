@@ -32,7 +32,7 @@ Sounds good? Great, let's move on to seeing all that in an example.
 
 If you're using Bootstrap's compiled CSS, this the example you'll want to start with.
 
-{% example html %}
+{{ example html }}
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
@@ -46,7 +46,7 @@ If you're using Bootstrap's compiled CSS, this the example you'll want to start 
     </div>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 The above example creates three equal-width columns on small, medium, large, and extra large devices using our [predefined grid classes](#predefined-classes). Those columns are centered in the page with the parent `.container`.
 
@@ -249,7 +249,7 @@ In addition to our semantic mixins, Bootstrap includes an extensive set of prebu
 Using a single set of `.col-md-*` grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any `.row`.
 
 <div class="bd-example-row">
-{% example html %}
+{{ example html }}
 <div class="row">
   <div class="col-md-1">.col-md-1</div>
   <div class="col-md-1">.col-md-1</div>
@@ -277,7 +277,7 @@ Using a single set of `.col-md-*` grid classes, you can create a basic grid syst
   <div class="col-md-6">.col-md-6</div>
   <div class="col-md-6">.col-md-6</div>
 </div>
-{% endexample %}
+{{ endexample }}
 </div>
 
 ### Example: Mobile and desktop
@@ -285,7 +285,7 @@ Using a single set of `.col-md-*` grid classes, you can create a basic grid syst
 Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding `.col-xs-*` and `.col-md-*` to your columns. See the example below for a better idea of how it all works.
 
 <div class="bd-example-row">
-{% example html %}
+{{ example html }}
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->
 <div class="row">
   <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
@@ -304,7 +304,7 @@ Don't want your columns to simply stack in smaller devices? Use the extra small 
   <div class="col-xs-6">.col-xs-6</div>
   <div class="col-xs-6">.col-xs-6</div>
 </div>
-{% endexample %}
+{{ endexample }}
 </div>
 
 ### Example: Mobile, tablet, desktop
@@ -312,7 +312,7 @@ Don't want your columns to simply stack in smaller devices? Use the extra small 
 Build on the previous example by creating even more dynamic and powerful layouts with tablet `.col-sm-*` classes.
 
 <div class="bd-example-row">
-{% example html %}
+{{ example html }}
 <div class="row">
   <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
   <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
@@ -324,7 +324,7 @@ Build on the previous example by creating even more dynamic and powerful layouts
   <div class="clearfix hidden-sm-up"></div>
   <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
 </div>
-{% endexample %}
+{{ endexample }}
 </div>
 
 ### Example: Column wrapping
@@ -332,13 +332,13 @@ Build on the previous example by creating even more dynamic and powerful layouts
 If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.
 
 <div class="bd-example-row">
-{% example html %}
+{{ example html }}
 <div class="row">
   <div class="col-xs-9">.col-xs-9</div>
   <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
   <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
 </div>
-{% endexample %}
+{{ endexample }}
 </div>
 
 ### Example: Responsive column resets
@@ -346,7 +346,7 @@ If more than 12 columns are placed within a single row, each group of extra colu
 With the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a `.clearfix` and our [responsive utility classes]({{ site.baseurl }}/layout/responsive-utilities/).
 
 <div class="bd-example-row">
-{% example html %}
+{{ example html }}
 <div class="row">
   <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
   <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
@@ -357,13 +357,13 @@ With the four tiers of grids available you're bound to run into issues where, at
   <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
   <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
 </div>
-{% endexample %}
+{{ endexample }}
 </div>
 
 In addition to column clearing at responsive breakpoints, you may need to **reset offsets, pushes, or pulls**. See this in action in [the grid example]({{ site.baseurl }}/examples/grid/).
 
 <div class="bd-example-row">
-{% example html %}
+{{ example html }}
 <div class="row">
   <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
   <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
@@ -373,7 +373,7 @@ In addition to column clearing at responsive breakpoints, you may need to **rese
   <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
   <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
 </div>
-{% endexample %}
+{{ endexample }}
 </div>
 
 ### Example: Offsetting columns
@@ -381,7 +381,7 @@ In addition to column clearing at responsive breakpoints, you may need to **rese
 Move columns to the right using `.col-md-offset-*` classes. These classes increase the left margin of a column by `*` columns. For example, `.col-md-offset-4` moves `.col-md-4` over four columns.
 
 <div class="bd-example-row">
-{% example html %}
+{{ example html }}
 <div class="row">
   <div class="col-md-4">.col-md-4</div>
   <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
@@ -393,7 +393,7 @@ Move columns to the right using `.col-md-offset-*` classes. These classes increa
 <div class="row">
   <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
 </div>
-{% endexample %}
+{{ endexample }}
 </div>
 
 ### Example: Nesting columns
@@ -401,7 +401,7 @@ Move columns to the right using `.col-md-offset-*` classes. These classes increa
 To nest your content with the default grid, add a new `.row` and set of `.col-sm-*` columns within an existing `.col-sm-*` column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).
 
 <div class="bd-example-row">
-{% example html %}
+{{ example html }}
 <div class="row">
   <div class="col-sm-9">
     Level 1: .col-sm-9
@@ -415,7 +415,7 @@ To nest your content with the default grid, add a new `.row` and set of `.col-sm
     </div>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 </div>
 
 ### Example: Column ordering
@@ -423,10 +423,10 @@ To nest your content with the default grid, add a new `.row` and set of `.col-sm
 Easily change the order of our built-in grid columns with `.col-md-push-*` and `.col-md-pull-*` modifier classes.
 
 <div class="bd-example-row">
-{% example html %}
+{{ example html }}
 <div class="row">
   <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
   <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
 </div>
-{% endexample %}
+{{ endexample }}
 </div>

@@ -37,7 +37,7 @@ The `<html>` and `<body>` elements are updated to provide better page-wide defau
 All heading elements—e.g., `<h1>`—and `<p>` are reset to have their `margin-top` removed. Headings have `margin-bottom: .5rem` added and paragraphs `margin-bottom: 1rem` for easy spacing.
 
 <div class="bd-example">
-{% markdown %}
+{{ markdown }}
 # h1 heading
 Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 
@@ -55,7 +55,7 @@ Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem 
 
 ###### h6 heading
 Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-{% endmarkdown %}
+{{ endmarkdown }}
 </div>
 
 ## Lists
@@ -63,7 +63,7 @@ Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem 
 All lists—`<ul>`, `<ol>`, and `<dl>`—have their `margin-top` removed and a `margin-bottom: 1rem`. Nested lists have no `margin-bottom`.
 
 <div class="bd-example">
-{% markdown %}
+{{ markdown }}
 * Lorem ipsum dolor sit amet
 * Consectetur adipiscing elit
 * Integer molestie lorem at massa
@@ -85,13 +85,13 @@ All lists—`<ul>`, `<ol>`, and `<dl>`—have their `margin-top` removed and a `
 6. Faucibus porta lacus fringilla vel
 7. Aenean sit amet erat nunc
 8. Eget porttitor lorem
-{% endmarkdown %}
+{{ endmarkdown }}
 </div>
 
 For simpler styling, clear hierarchy, and better spacing, description lists have updated `margin`s. `<dd>`s reset `margin-left` to `0` and add `margin-bottom: .5rem`. `<dt>`s are **bolded**.
 
 <div class="bd-example">
-{% markdown %}
+{{ markdown }}
 <dl>
   <dt>Description lists</dt>
   <dd>A description list is perfect for defining terms.</dd>
@@ -101,7 +101,7 @@ For simpler styling, clear hierarchy, and better spacing, description lists have
   <dt>Malesuada porta</dt>
   <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
 </dl>
-{% endmarkdown %}
+{{ endmarkdown }}
 </div>
 
 ## Preformatted text
@@ -109,13 +109,13 @@ For simpler styling, clear hierarchy, and better spacing, description lists have
 The `<pre>` element is reset to remove its `margin-top` and use `rem` units for its `margin-bottom`.
 
 <div class="bd-example">
-{% markdown %}
+{{ markdown }}
 <pre>
 .example-element {
   margin-bottom: 1rem;
 }
 </pre>
-{% endmarkdown %}
+{{ endmarkdown }}
 </div>
 
 ## Tables
@@ -294,11 +294,11 @@ HTML5 adds [a new global attribute named `[hidden]`](https://developer.mozilla.o
 <input type="text" hidden>
 {% endhighlight %}
 
-{% callout warning %}
+{{ callout warning }}
 #### jQuery incompatibility
 
 `[hidden]` is not compatible with jQuery's `$(...).hide()` and `$(...).show()` methods. This could potentially change in jQuery 3, but we're not holding our breath. Therefore, we don't currently especially endorse `[hidden]` over other techniques for managing the `display` of elements.
-{% endcallout %}
+{{ endcallout }}
 
 To merely toggle the visibility of an element, meaning its `display` is not modified and the element can still affect the flow of the document, use [the `.invisible` class]({{ site.baseurl }}/components/utilities/#invisible-content) instead.
 

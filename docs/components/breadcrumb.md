@@ -8,7 +8,7 @@ Indicate the current page's location within a navigational hierarchy.
 
 Separators are automatically added in CSS through [`::before`](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) and [`content`](https://developer.mozilla.org/en-US/docs/Web/CSS/content).
 
-{% example html %}
+{{ example html }}
 <ol class="breadcrumb">
   <li class="active">Home</li>
 </ol>
@@ -21,4 +21,4 @@ Separators are automatically added in CSS through [`::before`](https://developer
   <li><a href="#">Library</a></li>
   <li class="active">Data</li>
 </ol>
-{% endexample %}
+{{ endexample }}

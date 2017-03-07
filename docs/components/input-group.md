@@ -15,7 +15,7 @@ Easily extend form controls by adding text, buttons, or button groups on either 
 
 Place one add-on or button on either side of an input. You may also place one on both sides of an input. **We do not support multiple add-ons on a single side, nor multiple form-controls in a single input group.**
 
-{% example html %}
+{{ example html }}
 <div class="input-group">
   <span class="input-group-addon" id="basic-addon1">@</span>
   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
@@ -37,13 +37,13 @@ Place one add-on or button on either side of an input. You may also place one on
   <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
   <span class="input-group-addon">.00</span>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Sizing
 
 Add the relative form sizing classes to the `.input-group` itself and contents within will automatically resize—no need for repeating the form control size classes on each element.
 
-{% example html %}
+{{ example html }}
 <div class="input-group input-group-lg">
   <span class="input-group-addon" id="sizing-addon1">@</span>
   <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
@@ -58,13 +58,13 @@ Add the relative form sizing classes to the `.input-group` itself and contents w
   <span class="input-group-addon" id="sizing-addon3">@</span>
   <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Checkboxes and radio addons
 
 Place any checkbox or radio option within an input group's addon instead of text.
 
-{% example html %}
+{{ example html }}
 <div class="row">
   <div class="col-lg-6">
     <div class="input-group">
@@ -83,13 +83,13 @@ Place any checkbox or radio option within an input group's addon instead of text
     </div>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Button addons
 
 Buttons in input groups are a bit different and require one extra level of nesting. Instead of `.input-group-addon`, you'll need to use `.input-group-btn` to wrap the buttons. This is required due to default browser styles that cannot be overridden.
 
-{% example html %}
+{{ example html }}
 <div class="row">
   <div class="col-lg-6">
     <div class="input-group">
@@ -122,11 +122,11 @@ Buttons in input groups are a bit different and require one extra level of nesti
     </div>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Buttons with dropdowns
 
-{% example html %}
+{{ example html }}
 <div class="row">
   <div class="col-lg-6">
     <div class="input-group">
@@ -163,11 +163,11 @@ Buttons in input groups are a bit different and require one extra level of nesti
     </div>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Segmented buttons
 
-{% example html %}
+{{ example html }}
 <div class="row">
   <div class="col-lg-6">
     <div class="input-group">
@@ -206,7 +206,7 @@ Buttons in input groups are a bit different and require one extra level of nesti
     </div>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Accessibility
 

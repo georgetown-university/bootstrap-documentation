@@ -70,12 +70,12 @@ All HTML headings, `<h1>` through `<h6>`, are available. `.h1` through `.h6` cla
 
 Use the included utility classes to recreate the small secondary heading text from Bootstrap 3.
 
-{% example html %}
+{{ example html }}
 <h3>
   Fancy display heading
   <small class="text-muted">With faded secondary text</small>
 </h3>
-{% endexample %}
+{{ endexample }}
 
 ## Display headings
 
@@ -111,17 +111,17 @@ Traditional heading elements are designed to work best in the meat of your page 
 
 Make a paragraph stand out by adding `.lead`.
 
-{% example html %}
+{{ example html }}
 <p class="lead">
   Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
 </p>
-{% endexample %}
+{{ endexample }}
 
 ## Inline text elements
 
 Styling for common inline HTML5 elements.
 
-{% example html %}
+{{ example html }}
 <p>You can use the mark tag to <mark>highlight</mark> text.</p>
 <p><del>This line of text is meant to be treated as deleted text.</del></p>
 <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
@@ -130,7 +130,7 @@ Styling for common inline HTML5 elements.
 <p><small>This line of text is meant to be treated as fine print.</small></p>
 <p><strong>This line rendered as bold text.</strong></p>
 <p><em>This line rendered as italicized text.</em></p>
-{% endexample %}
+{{ endexample }}
 
 While not shown above, feel free to use `<b>` and `<i>` in HTML5. `<b>` is meant to highlight words or phrases without conveying additional importance while `<i>` is mostly for voice, technical terms, etc.
 
@@ -140,42 +140,42 @@ Stylized implementation of HTML's `<abbr>` element for abbreviations and acronym
 
 Add `.initialism` to an abbreviation for a slightly smaller font-size.
 
-{% example html %}
+{{ example html }}
 <p><abbr title="attribute">attr</abbr></p>
 <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
-{% endexample %}
+{{ endexample }}
 
 ## Blockquotes
 
 For quoting blocks of content from another source within your document. Wrap `<blockquote class="blockquote">` around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote.
 
-{% example html %}
+{{ example html }}
 <blockquote class="blockquote">
   <p class="m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 </blockquote>
-{% endexample %}
+{{ endexample }}
 
 ### Naming a source
 
 Add a `<footer class="blockquote-footer">` for identifying the source. Wrap the name of the source work in `<cite>`.
 
-{% example html %}
+{{ example html }}
 <blockquote class="blockquote">
   <p class="m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
   <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
 </blockquote>
-{% endexample %}
+{{ endexample }}
 
 ### Reverse layout
 
 Add `.blockquote-reverse` for a blockquote with right-aligned content.
 
-{% example html %}
+{{ example html }}
 <blockquote class="blockquote blockquote-reverse">
   <p class="m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
   <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
 </blockquote>
-{% endexample %}
+{{ endexample }}
 
 ## Lists
 
@@ -183,7 +183,7 @@ Add `.blockquote-reverse` for a blockquote with right-aligned content.
 
 Remove the default `list-style` and left margin on list items (immediate children only). **This only applies to immediate children list items**, meaning you will need to add the class for any nested lists as well.
 
-{% example html %}
+{{ example html }}
 <ul class="list-unstyled">
   <li>Lorem ipsum dolor sit amet</li>
   <li>Consectetur adipiscing elit</li>
@@ -201,25 +201,25 @@ Remove the default `list-style` and left margin on list items (immediate childre
   <li>Aenean sit amet erat nunc</li>
   <li>Eget porttitor lorem</li>
 </ul>
-{% endexample %}
+{{ endexample }}
 
 ### Inline
 
 Place all list items on a single line with `display: inline-block;` and some basic margin between.
 
-{% example html %}
+{{ example html }}
 <ul class="list-inline">
   <li class="list-inline-item">Lorem ipsum</li>
   <li class="list-inline-item">Phasellus iaculis</li>
   <li class="list-inline-item">Nulla volutpat</li>
 </ul>
-{% endexample %}
+{{ endexample }}
 
 ### Horizontal description
 
 Align terms and descriptions horizontally by using our grid system's predefined classes (or semantic mixins). For longer terms, you can optionally add a `.text-truncate` class to truncate the text with an ellipsis.
 
-{% example html %}
+{{ example html }}
 <dl class="dl-horizontal">
   <dt class="col-sm-3">Description lists</dt>
   <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
@@ -234,7 +234,7 @@ Align terms and descriptions horizontally by using our grid system's predefined 
   <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
   <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
 </dl>
-{% endexample %}
+{{ endexample }}
 
 ## Responsive typography
 

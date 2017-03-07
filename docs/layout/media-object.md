@@ -6,9 +6,9 @@ group: layout
 
 The [media object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/) is an abstract element used as the basis for building more complex and repetitive components (like blog comments, Tweets, etc). Included is support for left and right aligned content, content alignment options, nesting, and more.
 
-{% callout info %}
+{{ callout info }}
 **Heads up!** When [flexbox mode]({{ site.baseurl }}/getting-started/flexbox/) is enabled, the media object will use `flex` styles wherever possible.
-{% endcallout %}
+{{ endcallout }}
 
 ## Contents
 
@@ -19,7 +19,7 @@ The [media object](http://www.stubbornella.org/content/2010/06/25/the-media-obje
 
 The default media allow to float a media object (images, video, audio) to the left or right of a content block.
 
-{% example html %}
+{{ example html }}
 <div class="media">
   <a class="media-left" href="#">
     <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
@@ -29,13 +29,13 @@ The default media allow to float a media object (images, video, audio) to the le
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Nesting
 
 Media components can also be nested.
 
-{% example html %}
+{{ example html }}
 <div class="media">
   <div class="media-left">
     <a href="#">
@@ -56,13 +56,13 @@ Media components can also be nested.
     </div>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Alignment
 
 The images or other media can be aligned top, middle, or bottom. The default is top aligned.
 
-{% example html %}
+{{ example html }}
 <div class="media">
   <div class="media-left">
     <a href="#">
@@ -75,9 +75,9 @@ The images or other media can be aligned top, middle, or bottom. The default is 
     <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
-{% example html %}
+{{ example html }}
 <div class="media">
   <div class="media-left media-middle">
     <a href="#">
@@ -90,9 +90,9 @@ The images or other media can be aligned top, middle, or bottom. The default is 
     <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
-{% example html %}
+{{ example html }}
 <div class="media">
   <div class="media-left media-bottom">
     <a href="#">
@@ -105,13 +105,13 @@ The images or other media can be aligned top, middle, or bottom. The default is 
     <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Media list
 
 With a bit of extra markup, you can use media inside list (useful for comment threads or articles lists).
 
-{% example html %}
+{{ example html }}
 <ul class="media-list">
   <li class="media">
     <div class="media-left">
@@ -170,4 +170,4 @@ With a bit of extra markup, you can use media inside list (useful for comment th
     </div>
   </li>
 </ul>
-{% endexample %}
+{{ endexample }}

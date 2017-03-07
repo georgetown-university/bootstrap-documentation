@@ -19,7 +19,7 @@ If you are using navs to provide a navigation bar, be sure to add a `role="navig
 
 Roll your own navigation style by extending the base `.nav` component. All Bootstrap's nav components are built on top of this by specifying additional styles. Includes styles for the disabled state, but **not the active state**.
 
-{% example html %}
+{{ example html }}
 <ul class="nav">
   <li class="nav-item">
     <a class="nav-link" href="#">Link</a>
@@ -34,35 +34,35 @@ Roll your own navigation style by extending the base `.nav` component. All Boots
     <a class="nav-link disabled" href="#">Disabled</a>
   </li>
 </ul>
-{% endexample %}
+{{ endexample }}
 
 Classes are used throughout, so your markup can be super flexible. Use `<ul>`s like above, or roll your own with say a `<nav>` element. The change in nav item display below **is intentional** as `<li>`s have a different default `display` than regular `<a>` elements.
 
-{% example html %}
+{{ example html }}
 <nav class="nav">
   <a class="nav-link active" href="#">Active</a>
   <a class="nav-link" href="#">Link</a>
   <a class="nav-link" href="#">Another link</a>
   <a class="nav-link disabled" href="#">Disabled</a>
 </nav>
-{% endexample %}
+{{ endexample }}
 
 ## Inline
 
 Easily space out nav links in a horizontal band with `.nav-inline`. Longer series of links will wrap to a new line.
 
-{% example html %}
+{{ example html }}
 <nav class="nav nav-inline">
   <a class="nav-link active" href="#">Active</a>
   <a class="nav-link" href="#">Link</a>
   <a class="nav-link" href="#">Another link</a>
   <a class="nav-link disabled" href="#">Disabled</a>
 </nav>
-{% endexample %}
+{{ endexample }}
 
 The same works for a navigation built with lists.
 
-{% example html %}
+{{ example html }}
 <ul class="nav nav-inline">
   <li class="nav-item">
     <a class="nav-link" href="#">Link</a>
@@ -77,13 +77,13 @@ The same works for a navigation built with lists.
     <a class="nav-link disabled" href="#">Disabled</a>
   </li>
 </ul>
-{% endexample %}
+{{ endexample }}
 
 ## Tabs
 
 Takes the basic nav from above and adds the `.nav-tabs` class to generate a tabbed interface. Use them to create tabbable regions with our [tab JavaScript plugin](#javascript-behavior).
 
-{% example html %}
+{{ example html }}
 <ul class="nav nav-tabs">
   <li class="nav-item">
     <a class="nav-link active" href="#">Active</a>
@@ -98,13 +98,13 @@ Takes the basic nav from above and adds the `.nav-tabs` class to generate a tabb
     <a class="nav-link disabled" href="#">Disabled</a>
   </li>
 </ul>
-{% endexample %}
+{{ endexample }}
 
 ## Pills
 
 Take that same HTML, but use `.nav-pills` instead:
 
-{% example html %}
+{{ example html }}
 <ul class="nav nav-pills">
   <li class="nav-item">
     <a class="nav-link active" href="#">Active</a>
@@ -119,13 +119,13 @@ Take that same HTML, but use `.nav-pills` instead:
     <a class="nav-link disabled" href="#">Disabled</a>
   </li>
 </ul>
-{% endexample %}
+{{ endexample }}
 
 ## Stacked pills
 
 Just add `.nav-stacked` to the `.nav.nav-pills`.
 
-{% example html %}
+{{ example html }}
 <ul class="nav nav-pills nav-stacked">
   <li class="nav-item">
     <a class="nav-link active" href="#">Active</a>
@@ -140,7 +140,7 @@ Just add `.nav-stacked` to the `.nav.nav-pills`.
     <a class="nav-link disabled" href="#">Disabled</a>
   </li>
 </ul>
-{% endexample %}
+{{ endexample }}
 
 ## Using dropdowns
 
@@ -148,7 +148,7 @@ Add dropdown menus with a little extra HTML and the [dropdowns JavaScript plugin
 
 ### Tabs with dropdowns
 
-{% example html %}
+{{ example html }}
 <ul class="nav nav-tabs">
   <li class="nav-item">
     <a class="nav-link active" href="#">Active</a>
@@ -170,11 +170,11 @@ Add dropdown menus with a little extra HTML and the [dropdowns JavaScript plugin
     <a class="nav-link disabled" href="#">Disabled</a>
   </li>
 </ul>
-{% endexample %}
+{{ endexample }}
 
 ### Pills with dropdowns
 
-{% example html %}
+{{ example html }}
 <ul class="nav nav-pills">
   <li class="nav-item">
     <a class="nav-link active" href="#">Active</a>
@@ -196,7 +196,7 @@ Add dropdown menus with a little extra HTML and the [dropdowns JavaScript plugin
     <a class="nav-link disabled" href="#">Disabled</a>
   </li>
 </ul>
-{% endexample %}
+{{ endexample }}
 
 ## JavaScript behavior
 

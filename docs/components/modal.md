@@ -19,23 +19,23 @@ $('#myModal').on('shown.bs.modal', function () {
 })
 {% endhighlight %}
 
-{% callout warning %}
+{{ callout warning }}
 #### Multiple open modals not supported
 
 Be sure not to open a modal while another is still visible. Showing more than one modal at a time requires custom code.
-{% endcallout %}
+{{ endcallout }}
 
-{% callout warning %}
+{{ callout warning }}
 #### Modal markup placement
 
 Always try to place a modal's HTML code in a top-level position in your document to avoid other components affecting the modal's appearance and/or functionality.
-{% endcallout %}
+{{ endcallout }}
 
-{% callout warning %}
+{{ callout warning }}
 #### Mobile device caveats
 
 There are some caveats regarding using modals on mobile devices. [See our browser support docs]({{ site.baseurl }}/getting-started/browsers-devices/#modals-navbars-and-virtual-keyboards) for details.
-{% endcallout %}
+{{ endcallout }}
 
 ### Static example
 
@@ -165,19 +165,19 @@ Toggle a modal via JavaScript by clicking the button below. It will slide down a
 </div>
 {% endhighlight %}
 
-{% callout warning %}
+{{ callout warning }}
 #### Make modals accessible
 
 Be sure to add `role="dialog"` and `aria-labelledby="..."`, referencing the modal title, to `.modal`, and `role="document"` to the `.modal-dialog` itself.
 
 Additionally, you may give a description of your modal dialog with `aria-describedby` on `.modal`.
-{% endcallout %}
+{{ endcallout }}
 
-{% callout info %}
+{{ callout info }}
 #### Embedding YouTube videos
 
 Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. [See this helpful Stack Overflow post](https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal) for more information.
-{% endcallout %}
+{{ endcallout }}
 
 ## Optional sizes
 
@@ -260,7 +260,7 @@ For modals that simply appear rather than fade in to view, remove the `.fade` cl
 
 To take advantage of the Bootstrap grid system within a modal, just nest `.container-fluid` within the `.modal-body` and then use the normal grid system classes within this container.
 
-{% example html %}
+{{ example html }}
 <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -308,13 +308,13 @@ To take advantage of the Bootstrap grid system within a modal, just nest `.conta
     Launch demo modal
   </button>
 </div>
-{% endexample %}
+{{ endexample }}
 
 ## Varying modal content based on trigger button
 
 Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use `event.relatedTarget` and [HTML `data-*` attributes](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes) (possibly [via jQuery](https://api.jquery.com/data/)) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on `relatedTarget`.
 
-{% example html %}
+{{ example html }}
 <div class="bd-example">
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
@@ -348,7 +348,7 @@ Have a bunch of buttons that all trigger the same modal, just with slightly diff
     </div>
   </div>
 </div>
-{% endexample %}
+{{ endexample }}
 
 {% highlight js %}
 $('#exampleModal').on('show.bs.modal', function (event) {
