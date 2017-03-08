@@ -13,11 +13,8 @@
   }
 
   .lead {
-    margin-right: auto;
     margin-bottom: 2rem;
-    margin-left: auto;
     font-size: 1rem;
-    text-align: center;
   }
 
   @include media-breakpoint-up(sm) {
@@ -39,7 +36,6 @@
   font-size: 2rem;
   font-weight: normal;
   color: #333;
-  text-align: center;
 }
 
 .half-rule {
@@ -78,8 +74,8 @@
 }
 @media (min-width: 768px) {
   .bd-featurette {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 0;
   }
   .bd-featurette-title {
     font-size: 2.5rem;
@@ -87,9 +83,6 @@
     + .lead {
       font-size: 1.5rem;
     }
-  }
-  .bd-featurette .lead {
-    max-width: 80%;
   }
   .bd-featurette .img-fluid {
     margin-top: 0;

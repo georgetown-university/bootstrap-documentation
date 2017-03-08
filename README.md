@@ -1,2 +1,2 @@
 # bootstrap-documentation
-Whitehaven theme-specific Bootstrap documentation
+Bootstrap's v4.0.0-alpha.2 documentation
