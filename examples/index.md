@@ -3,8 +3,6 @@ layout: simple
 title: Examples
 ---
 
-[Download the Bootstrap source code]({{ site.download.source }}) to snag these examples.
-
 ## Framework
 
 Examples that focus on implementing uses of built-in components provided by Bootstrap.
